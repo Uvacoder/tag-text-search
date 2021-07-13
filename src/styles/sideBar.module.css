@@ -1,0 +1,133 @@
+.stickyContainer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  height: 0;
+  z-index: 20;
+  width: 30%;
+  max-width: 30%;
+}
+
+.container {
+  position: absolute;
+  z-index: 20;
+  display: inline-block;
+  height: 100vh;
+  left: 20px;
+  padding: 1rem;
+  top: 0;
+  background: var(--baseLight);
+  border-radius: 2px;
+  z-index: 10;
+  transition: 0.8s;
+}
+
+.sb__container {
+  background: var(--base);
+  border-radius: 2px;
+  transition: 0.4s;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 2px solid transparent;
+  width: 100%;
+}
+
+.sb__container:focus-within {
+  background: var(--baseLight);
+  border: 2px solid var(--primary);
+}
+
+.sb__container svg {
+  margin-left: 0.5rem;
+  padding-top: 0.2rem;
+}
+
+.sb__input {
+  font-family: Antonio;
+  background: var(--base);
+  outline: none;
+  color: var(--primary);
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  transition: 0.4s;
+}
+
+.sb__input:focus-within {
+  background: var(--baseLight);
+}
+
+.sb__input::placeholder {
+  color: var(--primary);
+}
+
+.ts__flexContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.ts__heading {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+}
+
+.ts_selectedTagContainer {
+  margin-bottom: 1.5rem;
+  margin-top: 0.3rem;
+}
+
+.ts__unselectedTagContainer {
+  overflow-y: auto;
+  height: 100%;
+  margin-top: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ts__selectedTag {
+  cursor: pointer;
+  margin: 0.2rem 0;
+  margin-right: 0.4rem;
+  position: relative;
+  color: black;
+  border: 2px solid var(--primary);
+  padding: 5px 15px;
+  overflow: hidden;
+  transition: 1s all ease;
+  background: transparent;
+  font-family: Antonio;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  border-radius: 2px;
+  outline: none;
+  background: var(--primary);
+  font-size: 1rem;
+}
+
+.ts__unselectedTag {
+  cursor: pointer;
+  margin: 0.5rem 0;
+  position: relative;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 5px 15px;
+  overflow: hidden;
+  transition: 1s all ease;
+  background: transparent;
+  font-family: Antonio;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  border-radius: 2px;
+  outline: none;
+  background: var(--base);
+  font-size: 1rem;
+}
