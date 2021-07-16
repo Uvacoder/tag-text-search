@@ -1,10 +1,6 @@
-import { useContext } from 'react';
-import { SearchContext } from '../../store/search-context';
 import styles from '../../styles/sideBar.module.css';
 
 const SearchBar = () => {
-  const { query, searchHandler } = useContext(SearchContext);
-
   return (
     <div className={styles.sb__container}>
       <svg
@@ -19,13 +15,7 @@ const SearchBar = () => {
           fill='#F1762D'
         />
       </svg>
-      <input
-        className={styles.sb__input}
-        placeholder='Search'
-        type='text'
-        onChange={e => searchHandler(e.target.value)}
-        value={query}
-      />
+      <input className={styles.sb__input} placeholder='Search' type='text' />
       <span>
         <i></i>
       </span>
