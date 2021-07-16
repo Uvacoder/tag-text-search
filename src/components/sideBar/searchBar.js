@@ -16,9 +16,6 @@ const SearchBar = () => {
         />
       </svg>
       <input className={styles.sb__input} placeholder='Search' type='text' />
-      <span>
-        <i></i>
-      </span>
     </div>
   );
 };
